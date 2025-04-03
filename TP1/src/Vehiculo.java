@@ -1,15 +1,17 @@
+import java.time.Year;
+
 public class Vehiculo {
     private String patente;
     private String marca;
     private int anio;
     private double capacidadCargaKg;
 
-    //Constructor
+    //Constructor con validaciones
     public Vehiculo(String patente, String marca, int anio, double capacidadCargaKg) {
-        this.patente = patente;
-        this.marca = marca;
-        this.anio = anio;
-        this.capacidadCargaKg = capacidadCargaKg;
+        setPatente(patente);
+        setMarca(marca);
+        setAnio(anio);
+        setCapacidadCargaKg(capacidadCargaKg);
     }
     // Getters
     public String getPatente() {
@@ -27,20 +29,33 @@ public class Vehiculo {
 
     // Setters
     public void setPatente(String patente) {
+        // La patente no puede ser null ni vacía
+        if (patente == null || patente.trim().isEmpty()) {
+            throw new IllegalArgumentException("La Patente no puede estar vacia");
+        }
         this.patente = patente;
     }
     public void setMarca(String marca) {
+        // La marca no puede ser null ni vacia
+        if (marca == null || marca.trim().isEmpty()) {
+            throw new IllegalArgumentException("La marca no puede estar vacía.");
+        }
         this.marca = marca;
     }
     public void setAnio(int anio) {
+        // El año debe ser mayor a 1900 y menor o igual al año actual
+        int anioActual = Year.now().getValue();
+        if (anio < 1900 || anio > anioActual) {
+            throw new IllegalArgumentException("El año debe ser mayor a 1900 y menor o igual al año actual.");
+        }
         this.anio = anio;
     }
     public void setCapacidadCargaKg(double capacidadCargaKg) {
+        // La capacidad de carga debe ser positiva
+        if (capacidadCargaKg <= 0) {
+            throw new IllegalArgumentException("La capacidad de carga debe ser un número positivo.");
+        }
         this.capacidadCargaKg = capacidadCargaKg;
     }
 
-    // Metodo mostrarInformacion() (sera eliminado en la Etapa 2)
-    public void mostrarInformacion() {
-        System.out.println("Vehiculo [Patente: " + patente + ", Marca: " + marca + ", Año: " + anio + ", Capacidad: " + capacidadCargaKg + " kg]");
-    }
 }
