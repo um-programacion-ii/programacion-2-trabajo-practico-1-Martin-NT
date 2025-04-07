@@ -21,12 +21,9 @@ public class Main {
         vehiculos.add(v4);
         vehiculos.add(v5);
 
-        // Imprimir todos los vehiculos usando VehiculosPrinter
-        printer.imprimir(v1);
-        printer.imprimir(v2);
-        printer.imprimir(v3);
-        printer.imprimir(v4);
-        printer.imprimir(v5);
-
+        // Usar VehiculoPrinter para imprimir cada vehículo
+        for (Vehiculo v : vehiculos) {
+            printer.imprimir(v);
+        }
     }
 }
