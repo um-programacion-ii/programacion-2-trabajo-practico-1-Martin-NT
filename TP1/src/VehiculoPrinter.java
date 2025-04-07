@@ -12,13 +12,17 @@ public class VehiculoPrinter {
             Camion camion = (Camion) vehiculo;
             System.out.println("--> Tiene Acoplado: " + camion.isTieneAcoplado());
         }
+        if (vehiculo instanceof Auto) {
+            Auto auto = (Auto) vehiculo;
+            System.out.println("--> Cantidad de Pasajeros: " + auto.getCantidadPasajeros());
+        }
 
         /* Pattern Matching (desde Java 16 en adelante)
         if (vehiculo instanceof Camion camion) {
             System.out.println("--> Tiene acoplado: " + camion.isTieneAcoplado());
         }
         */
-        
+
         System.out.println("-----------------------------------------------------------------------------");
     }
 }
