@@ -19,4 +19,9 @@ public class Auto extends Vehiculo {
         }
         this.cantidadPasajeros = cantidadPasajeros;
     }
+
+    @Override
+    public void imprimirInformacion(VehiculoPrinter printer) {
+        printer.imprimirAuto(this);
+    }
 }
