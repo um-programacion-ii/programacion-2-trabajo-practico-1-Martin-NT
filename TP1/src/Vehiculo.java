@@ -1,6 +1,6 @@
 import java.time.Year;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     private String patente;
     private String marca;
     private int anio;
@@ -57,5 +57,7 @@ public class Vehiculo {
         }
         this.capacidadCargaKg = capacidadCargaKg;
     }
-    
+    // Metodo abstracto para que cada subclase delegue su impresión
+    public abstract void imprimirInformacion(VehiculoPrinter printer);
+
 }
