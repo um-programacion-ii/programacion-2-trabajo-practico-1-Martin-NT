@@ -34,7 +34,6 @@
    ```bash
    java app/Main.java
 
-
 ---
 
 ## 💡 Ejemplos de Uso
