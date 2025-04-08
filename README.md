@@ -20,7 +20,7 @@
 1. Clonar el repositorio:
    ```bash
    git clone git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Martin-NT.git
-   cd repositorio
+   cd programacion-2-trabajo-practico-1-Martin-NT
 
 2. Compilar el proyecto:
    ```bash
