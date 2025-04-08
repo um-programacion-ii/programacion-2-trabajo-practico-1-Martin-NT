@@ -22,13 +22,8 @@
    git clone git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Martin-NT.git
    cd programacion-2-trabajo-practico-1-Martin-NT
 
-2. Compilar el proyecto:
-   ```bash
-   javac TP1/src/*.java
-
-3. Ejecutar el programa principal:
-   ```bash
-   java TP1/src/Main
+2. Abrir el proyecto en tu IDE favorito (por ejemplo, IntelliJ).
+3. Ejecutar el archivo Main.java presionando el botón de Run ▶️ en el IDE.
 
 ---
 
