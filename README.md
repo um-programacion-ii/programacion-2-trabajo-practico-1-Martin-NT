@@ -1,6 +1,53 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
 
+## 👤 Autor
+
+- **Nombre y Apellido**: *Martin Navarro Teixidor*
+
+---
+
+## 🛠️ Requisitos Previos
+
+- Java JDK 8 o superior instalado
+- IDE recomendado: IntelliJ IDEA
+- Git instalado
+
+---
+
+## 🚀 Instrucciones para Compilar y Ejecutar
+
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/usuario/repositorio.git
+   cd repositorio
+
+2. Compilar el proyecto:
+   ```bash
+   javac TP1/src/*.java
+
+3. Ejecutar el programa principal:
+   ```bash
+   java TP1/src/Main
+
+---
+
+## 💡 Ejemplos de Uso
+
+- Al ejecutar el programa, se mostrarán los vehículos cargados.
+- Podés buscar vehículos por patente escribiendo una en consola:
+  ```bash
+  ---> Ingrese una patente para buscar (o escriba 'salir'): LMN456
+- El sistema responderá con los datos del vehículo o un mensaje si no se encontró.
+- Si desea buscar otra patente la escribe en la consola, si desea finalizar el sistema escribe salir y se finalizara el sistema:
+  ```bash
+  ---> Ingrese una patente para buscar (o escriba 'salir'): salir
+   --> Saliendo del sistema de búsqueda.
+
+   Process finished with exit code 0
+
+---
+
 ## 📌 Objetivo General
 
 Desarrollar una aplicación en Java para gestionar vehículos de una empresa, aplicando los principios de programación orientada a objetos y los **primeros tres principios SOLID**:  
