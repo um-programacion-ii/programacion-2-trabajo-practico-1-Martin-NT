@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,5 +22,34 @@ public class Main {
         for (Vehiculo v : vehiculos) {
             v.imprimirInformacion(printer);
         }
+
+        // Búsqueda múltiple por patente
+        Scanner scanner = new Scanner(System.in); // Se crea un objeto Scanner para leer la entrada del usuario por consola
+
+        while (true) { // Bucle infinito para permitir múltiples búsquedas
+            System.out.print("\n---> Ingrese una patente para buscar (o escriba 'salir'): ");
+            String input = scanner.nextLine(); // Se lee la línea ingresada por el usuario
+
+            // Si el usuario escribe "salir" o no escribe nada, se termina el bucle
+            if (input.equalsIgnoreCase("salir") || input.trim().isEmpty()) {
+                System.out.println("--> Saliendo del sistema de búsqueda.");
+                break; // Sale del bucle
+            }
+
+            // Se busca el vehículo que coincida con la patente ingresada
+            Vehiculo encontrado = VehiculoFinder.buscarPorPatente(vehiculos, input);
+
+            if (encontrado != null) {
+                // Si se encuentra, se imprime la información del vehículo
+                System.out.println("\n-------------Vehículo encontrado-------------");
+                encontrado.imprimirInformacion(printer);
+            } else {
+                // Si no se encuentra, se informa al usuario
+                System.out.println("\n--> No se encontró ningún vehículo con la patente ingresada.");
+            }
+        }
+
+        scanner.close(); // Se cierra el scanner para liberar recursos
+
     }
 }
