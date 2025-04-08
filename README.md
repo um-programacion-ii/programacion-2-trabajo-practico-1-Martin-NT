@@ -23,7 +23,8 @@
    cd programacion-2-trabajo-practico-1-Martin-NT
 
 2. Abrir el proyecto en tu IDE favorito (por ejemplo, IntelliJ).
-3. Ejecutar el archivo Main.java presionando el botón de Run ▶️ en el IDE.
+3. Navegar a la carpeta TP1/src/app/ y abrir el archivo Main.java.
+4. Ejecutar el archivo Main.java presionando el botón Run ▶️ del IDE.
 
 ---
 

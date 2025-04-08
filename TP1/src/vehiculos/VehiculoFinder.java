@@ -1,5 +1,5 @@
+package vehiculos;
 import java.util.List;
-
 
  // Clase que permite buscar vehículos dentro de una lista por su patente.
 public class VehiculoFinder {

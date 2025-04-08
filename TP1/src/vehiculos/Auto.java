@@ -1,3 +1,5 @@
+package vehiculos;
+
 public class Auto extends Vehiculo {
     private int cantidadPasajeros;
 
@@ -25,3 +27,4 @@ public class Auto extends Vehiculo {
         printer.imprimirAuto(this);
     }
 }
+

@@ -1,3 +1,5 @@
+package vehiculos;
+
 public class VehiculoPrinter {
 
     public void imprimirVehiculo(Vehiculo vehiculo) {
