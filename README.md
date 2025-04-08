@@ -21,10 +21,19 @@
    ```bash
    git clone git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Martin-NT.git
    cd programacion-2-trabajo-practico-1-Martin-NT
+   
+2. Navegar al directorio del código fuente:
+   ```bash
+   cd TP1/src
+   
+3. Compilar todos los archivos .java:
+   ```bash
+   javac vehiculos/*.java app/*.java
+   
+4. Ejecutar la aplicación principal: 
+   ```bash
+   java app/Main.java
 
-2. Abrir el proyecto en tu IDE favorito (por ejemplo, IntelliJ).
-3. Navegar a la carpeta TP1/src/app/ y abrir el archivo Main.java.
-4. Ejecutar el archivo Main.java presionando el botón Run ▶️ del IDE.
 
 ---
 
